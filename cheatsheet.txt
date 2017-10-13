@@ -1,0 +1,6 @@
+object 
+class, public , protected, private
+static //since lot of time we are using this
+## fetchAll options
+$tasks = $statement->fetchAll(PDO::FETCH_CLASS, 'Task');
+$tasks = $statement->fetchAll(PDO::FETCH_OBJ);
