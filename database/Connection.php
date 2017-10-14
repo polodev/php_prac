@@ -1,9 +1,9 @@
 <?php
 
 class Connection {
-  public static function make () {
+  public static function make ($database) {
     try {
-      return new PDO('mysql:dbname=mytodo;host=localhost', 'root', '');
+      return new PDO($database['dsn'], $database['name'], $database['password'], $database['options']);
     } catch (PDOException $e) {
       die ('failed' . $e->getMessage());
     }
