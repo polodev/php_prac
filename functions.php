@@ -7,7 +7,7 @@ function connect_to_db () {
   }
 }
 
-function all_task($connection) {
+function fetch_all_task($connection) {
   $statement = $connection->prepare('select * from todos');
   $statement->execute();
   return $statement->fetchAll(PDO::FETCH_CLASS, 'Task');
