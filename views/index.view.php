@@ -1,16 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>php</title>
-</head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="/about">About</a></li>
-      <li><a href="/contact">contact</a></li>
-    </ul>
-  </nav>
+<?php include('partials/head.php') ?>
   <ul>
     <?php foreach($tasks as $task) : ?>
       <li>
@@ -22,6 +10,4 @@
       </li>
     <?php endforeach ?>
   </ul>
-  
-</body>
-</html>
+<?php include('partials/footer.php') ?>
