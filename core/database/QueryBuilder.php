@@ -8,6 +8,6 @@ class QueryBuilder {
   public function selectAll () {
     $statement = $this->connection->prepare('select * from todos');
     $statement->execute();
-    return $statement->fetchAll(PDO::FETCH_CLASS, 'Task');
+    return $statement->fetchAll(PDO::FETCH_CLASS);
   }
 }

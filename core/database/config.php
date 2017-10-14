@@ -1,5 +1,5 @@
 <?php
-return [
+$config = [
   'database' => [
     'dsn' => 'mysql:host=localhost;dbname=mytodo',
     'name' => 'root',

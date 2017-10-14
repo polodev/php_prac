@@ -5,6 +5,12 @@
   <title>php</title>
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">contact</a></li>
+    </ul>
+  </nav>
   <ul>
     <?php foreach($tasks as $task) : ?>
       <li>
